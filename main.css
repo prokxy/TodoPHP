@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    color-scheme: dark !important;
+}
+
+body {
+    height: 100vh;
+    text-align: center;
+}
+nav {
+    text-align: end;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+.todo {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+
+}
+
+form {
+    margin-bottom: 15px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hover:before {
+    content: 'radio_button_unchecked';
+}
+
+.hover:hover:before {
+    content: 'check_circle';
+}
